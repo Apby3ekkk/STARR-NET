@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STARRNET</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #FFD671;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    min-height: 100vh;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+  }
+  .section.reverse { flex-direction: row-reverse; }
+
+  .section .image {
+    flex: 1 1 300px;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(135deg, #F0B00C, #333);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    overflow: hidden;
+  }
+  .section .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .section .text {
+    flex: 1 1 300px;
+    max-width: 500px;
+  }
+  .section .text h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #F0940C, #F07E0C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .section .text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #b5b5b5;
+  }
+
+  .cta-wrap {
+    text-align: center;
+    padding: 80px 20px 40px;
+  }
+  .cta-btn {
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform .3s, box-shadow .3s;
+    box-shadow: 0 10px 30px rgba(123,47,247,0.5);
+  }
+  .cta-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(123,47,247,0.8);
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #555;
+    font-size: 14px;
+  }
+
+  @media (max-width: 700px) {
+    .section { padding: 60px 20px; gap: 30px; }
+    .section .text h2 { font-size: 30px; }
+    .section .text p { font-size: 17px; }
+    .cta-btn { padding: 16px 40px; font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- СЕКЦИЯ 1 : картинка слева, текст справа -->
+  <section class="section">
+    <div class="image">
+      <!-- ⬇️ ЗАМЕНИ img1.jpg на название своей картинки -->
+      <img src="img1.jpg" alt="Скриншот 1">
+    </div>
+    <div class="text">
+      <h2>INTERFACE</h2>
+      <p>User-friendly interface even for a baby.</p>
+    </div>
+  </section>
+
+  <!-- СЕКЦИЯ 2 : текст слева, картинка справа -->
+  <section class="section reverse">
+    <div class="image">
+      <!-- ⬇️ ЗАМЕНИ img2.jpg -->
+      <img src="img2.jpg" alt="Скриншот 2">
+    </div>
+    <div class="text">
+      <h2>MASCCOT</h2>
+      <p>Recognizable mascot - StarrDrop.</p>
+    </div>
+  </section>
+
+  <!-- СЕКЦИЯ 3 : картинка слева, текст справа -->
+  <section class="section">
+    <div class="image">
+      <!-- ⬇️ ЗАМЕНИ img3.jpg -->
+      <img src="img3.jpg" alt="Скриншот 3">
+    </div>
+    <div class="text">
+      <h2>DATA</h2>
+      <p>Your data is safe!</p>
+    </div>
+  </section>
+
+  <!-- СЕКЦИЯ 4 : текст слева, картинка справа -->
+  <section class="section reverse">
+    <div class="image">
+      <!-- ⬇️ ЗАМЕНИ img4.jpg -->
+      <img src="img4.jpg" alt="Скриншот 4">
+    </div>
+    <div class="text">
+      <h2>ABOUT FUNCTIONS</h2>
+      <p>Many fuctions.</p>
+    </div>
+  </section>
+
+  <!-- СЕКЦИЯ 5 : картинка слева, текст справа -->
+  <section class="section">
+    <div class="image">
+      <!-- ⬇️ ЗАМЕНИ img5.jpg -->
+      <img src="img5.jpg" alt="Скриншот 5">
+    </div>
+    <div class="text">
+      <h2>REDSTARR2010</h2>
+      <p>NO ONE should know the site password. Oops, I put it in the wrong line of the code</p>
+    </div>
+  </section>
+
+  <!-- СЕКЦИЯ 6 : текст слева, картинка справа -->
+  <section class="section reverse">
+    <div class="image">
+      <!-- ⬇️ ЗАМЕНИ img6.jpg -->
+      <img src="img6.jpg" alt="Скриншот 6">
+    </div>
+    <div class="text">
+      <h2>REMEMBER.</h2>
+      <p>REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.REMEMBER.</p>
+    </div>
+  </section>
+
+  <!-- КНОПКА-ССЫЛКА НА TELEGRAM -->
+  <div class="cta-wrap">
+    <a class="cta-btn" href="https://t.me/STARRR_NETT" target="_blank" rel="noopener">
+      LOGIN
+    </a>
+  </div>
+
+  <footer>
+    © 2025 — Все права защищены
+  </footer>
+
+</body>
+</html>
